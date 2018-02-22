@@ -10,9 +10,7 @@
 						"type": "text/javascript",
 						"exec": [
 							"tests[\"Has Access Token\"] = responseBody.has(\"access_token\");",
-							"",
-							"if(tests[\"Has Access Token\"])",
-							"{",
+						
 							"    var data = JSON.parse(responseBody);",
 							"    var token = \"Bearer \" + data.access_token",
 							"    postman.setEnvironmentVariable(\"BearerToken\", token)",
